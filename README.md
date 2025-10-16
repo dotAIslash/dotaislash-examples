@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="logo.png" alt="dotAIslash Logo" width="120" />
+
 # 📚 VERSA Examples
 
 ### Real-World `.ai/` Folder Configurations
