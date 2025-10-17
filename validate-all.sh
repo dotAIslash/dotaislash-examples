@@ -10,12 +10,17 @@ echo "🔍 Validating VERSA Examples"
 echo "=============================="
 echo ""
 
-VERSA_CLI="/var/www/dotAIslash/dotaislash-cli/dist/bin.js"
-EXAMPLES_DIR="/var/www/dotAIslash/dotaislash-examples/examples"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+EXAMPLES_DIR="$SCRIPT_DIR/examples"
 
-if [ ! -f "$VERSA_CLI" ]; then
-  echo "❌ Error: VERSA CLI not found at $VERSA_CLI"
-  echo "Run: cd /var/www/dotAIslash/dotaislash-cli && bun run build"
+# Check if versa is in PATH or use relative path
+if command -v versa &> /dev/null; then
+  VERSA_CLI="versa"
+elif [ -f "$SCRIPT_DIR/../cli/dist/bin.js" ]; then
+  VERSA_CLI="bun $SCRIPT_DIR/../cli/dist/bin.js"
+else
+  echo "❌ Error: VERSA CLI not found"
+  echo "Make sure CLI is built or 'versa' is in PATH"
   exit 1
 fi
 
