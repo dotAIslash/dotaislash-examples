@@ -42,8 +42,8 @@ git clone https://github.com/dotAIslash/dotaislash-examples.git
 # Copy an example to your project
 cp -r dotaislash-examples/typescript-project/.ai your-project/
 
-# Or use the CLI (coming soon)
-versa init --template typescript-project
+# Or use the CLI
+versa init
 ```
 
 ---
