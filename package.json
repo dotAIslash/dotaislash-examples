@@ -16,9 +16,9 @@
     "lint": "echo 'No linting for examples'"
   },
   "devDependencies": {
-    "@types/node": "^22.15.31",
+    "@types/node": "^24.8.1",
     "typescript": "^5.8.3",
-    "vitest": "^1.2.0"
+    "vitest": "^3.2.4"
   },
   "engines": {
     "node": ">=22.16.0"
