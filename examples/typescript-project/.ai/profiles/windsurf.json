@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "merge": "deep",
+  "metadata": {
+    "name": "Windsurf Profile",
+    "description": "Optimized settings for Windsurf"
+  },
+  "settings": {
+    "streaming": true,
+    "features": {
+      "autocomplete": true,
+      "inlineEdit": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "name": "My Project",
+    "description": "VERSA configuration for my project",
+    "author": "",
+    "created": "2025-10-17"
+  },
+  "rules": [
+    "rules/style.md"
+  ],
+  "settings": {
+    "model": "claude-sonnet-4",
+    "temperature": 0.7
+  }
+}

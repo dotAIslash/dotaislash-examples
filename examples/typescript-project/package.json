@@ -1,0 +1,19 @@
+{
+  "name": "typescript-project-example",
+  "version": "1.0.0",
+  "description": "Example TypeScript project with VERSA configuration",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.31",
+    "typescript": "^5.8.3",
+    "jest": "^29.0.0"
+  }
+}

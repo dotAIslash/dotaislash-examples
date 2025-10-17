@@ -1,0 +1,32 @@
+{
+  "name": "dotaislash-examples",
+  "version": "1.0.0",
+  "description": "Example .ai/ folder configurations for VERSA 1.0",
+  "keywords": [
+    "versa",
+    "ai",
+    "agents",
+    "examples",
+    "dotaislash"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "validate": "./validate-all.sh",
+    "lint": "echo 'No linting for examples'"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.31",
+    "typescript": "^5.8.3",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dotAIslash/dotaislash-examples.git"
+  },
+  "author": "Alphin Tom <alphinctom@gmail.com>"
+}

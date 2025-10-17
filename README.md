@@ -6,8 +6,13 @@
 
 ### Real-World `.ai/` Folder Configurations
 
+**v1.0.0 Released - October 17, 2025**
+
+**✅ 10/10 Examples Validated**
+
 [![License](https://img.shields.io/badge/License-MIT-violet?style=for-the-badge)](LICENSE)
-[![Examples](https://img.shields.io/badge/Examples-12+-cyan?style=for-the-badge)](.)
+[![Examples](https://img.shields.io/badge/Examples-10-cyan?style=for-the-badge)](.)
+[![Validated](https://img.shields.io/badge/Validated-✅_10/10-green?style=for-the-badge)](.)
 [![Website](https://img.shields.io/badge/Website-dotaislash.github.io-lime?style=for-the-badge)](https://dotaislash.github.io)
 
 [**Browse Examples**](#-examples) · [**VERSA Spec**](https://github.com/dotAIslash/dotaislash-spec) · [**Get Started**](#-quick-start)

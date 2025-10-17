@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "merge": "deep",
+  "metadata": {
+    "name": "Cursor IDE Profile",
+    "description": "Optimized settings for Cursor"
+  },
+  "settings": {
+    "temperature": 0.5,
+    "shortcuts": {
+      "review": "agents/code-reviewer.json",
+      "document": "agents/documenter.json"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "name": "Enterprise Application",
+    "description": "Enterprise-grade configuration with compliance and security",
+    "tags": ["enterprise", "security", "compliance", "soc2"],
+    "author": "Alphin Tom",
+    "created": "2025-10-17"
+  },
+  "rules": ["rules/security-requirements.md", "rules/compliance.md", "rules/audit-logging.md"],
+  "context": ["src/**/*", "config/**/*"],
+  "settings": {
+    "model": "claude-sonnet-4",
+    "temperature": 0.3
+  },
+  "permissions": {
+    "files": {
+      "read": ["src/**", "config/**", "docs/**"],
+      "write": ["src/**"],
+      "deny": [".env*", "*.key", "*.pem", "secrets/**", "credentials/**"]
+    },
+    "network": {
+      "allow": ["https://api.internal.company.com"],
+      "deny": ["*"]
+    },
+    "commands": {
+      "allow": ["npm test", "npm run lint"],
+      "deny": ["rm", "sudo", "curl", "wget"]
+    }
+  }
+}

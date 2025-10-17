@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "merge": "deep",
+  "metadata": {
+    "name": "cursor Profile",
+    "description": "Tool-specific settings for cursor"
+  },
+  "settings": {
+    "shortcuts": {
+      "review": "agents/code-reviewer.json"
+    }
+  }
+}

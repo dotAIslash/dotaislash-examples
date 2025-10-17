@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "name": "Documentation Generator",
+  "description": "Generates comprehensive documentation for TypeScript code",
+  "model": "claude-sonnet-4",
+  "temperature": 0.7,
+  "maxTokens": 4096,
+  "rules": [
+    "rules/typescript-style.md"
+  ],
+  "systemPrompt": "You are a documentation expert.\n\nGenerate:\n1. JSDoc comments for functions and classes\n2. README files for modules\n3. API documentation\n4. Usage examples\n\nWrite clear, concise documentation that helps developers understand the code.",
+  "capabilities": ["documentation", "jsdoc", "markdown"]
+}

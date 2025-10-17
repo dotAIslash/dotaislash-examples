@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "name": "React Native App",
+    "description": "Mobile application with iOS and Android support",
+    "tags": ["react-native", "mobile", "ios", "android"],
+    "author": "Alphin Tom",
+    "created": "2025-10-17"
+  },
+  "rules": ["rules/mobile-patterns.md", "rules/platform-specific.md"],
+  "context": ["src/**/*.{ts,tsx}", "ios/**/*", "android/**/*"],
+  "settings": {
+    "model": "claude-sonnet-4",
+    "temperature": 0.6
+  }
+}

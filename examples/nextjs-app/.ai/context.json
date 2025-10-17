@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "name": "Next.js Application",
+    "description": "Modern Next.js 15 app with App Router",
+    "tags": ["nextjs", "react", "typescript", "frontend"],
+    "author": "Alphin Tom",
+    "created": "2025-10-17",
+    "license": "MIT"
+  },
+  "rules": [
+    "rules/nextjs-patterns.md",
+    "rules/react-best-practices.md",
+    "rules/performance.md"
+  ],
+  "context": [
+    "app/**/*.{ts,tsx}",
+    "components/**/*.{ts,tsx}",
+    "lib/**/*.ts",
+    "public/**/*",
+    "next.config.ts",
+    "package.json"
+  ],
+  "settings": {
+    "model": "claude-sonnet-4",
+    "temperature": 0.6
+  },
+  "permissions": {
+    "files": {
+      "read": ["app/**", "components/**", "lib/**", "public/**", "*.config.*", "*.json"],
+      "write": ["app/**", "components/**", "lib/**"],
+      "deny": [".next/**", "node_modules/**", ".env*"]
+    }
+  }
+}

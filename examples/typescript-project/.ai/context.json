@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "name": "TypeScript Project",
+    "description": "Modern TypeScript application with strict configuration",
+    "tags": ["typescript", "node", "backend"],
+    "author": "Alphin Tom",
+    "created": "2025-10-17",
+    "license": "MIT"
+  },
+  "rules": [
+    "rules/typescript-style.md",
+    "rules/testing.md",
+    "rules/architecture.md"
+  ],
+  "context": [
+    "src/**/*.ts",
+    "tests/**/*.test.ts",
+    "package.json",
+    "tsconfig.json"
+  ],
+  "agents": [
+    "agents/code-reviewer.json",
+    "agents/documenter.json"
+  ],
+  "settings": {
+    "model": "claude-sonnet-4",
+    "temperature": 0.7,
+    "maxTokens": 4096
+  },
+  "permissions": {
+    "files": {
+      "read": ["src/**", "tests/**", "*.json", "*.md", "*.ts"],
+      "write": ["src/**", "tests/**", "docs/**"],
+      "deny": [".env*", "*.key", "*.pem", "node_modules/**", "dist/**"]
+    },
+    "network": {
+      "allow": ["https://registry.npmjs.org", "https://api.github.com"],
+      "deny": ["*"]
+    },
+    "commands": {
+      "allow": ["npm test", "npm run build", "npm run lint", "git status", "git diff"],
+      "deny": ["rm -rf", "sudo", "dd"]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "name": "Monorepo",
+    "description": "Workspace configuration for monorepo projects",
+    "tags": ["monorepo", "workspace", "turborepo"],
+    "author": "Alphin Tom",
+    "created": "2025-10-17"
+  },
+  "rules": ["rules/workspace-conventions.md", "rules/shared-standards.md"],
+  "context": ["packages/**/*", "apps/**/*", "package.json", "turbo.json"],
+  "settings": {
+    "model": "claude-sonnet-4",
+    "temperature": 0.7
+  }
+}
