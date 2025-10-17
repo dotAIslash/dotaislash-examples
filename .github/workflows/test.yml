@@ -55,6 +55,4 @@ jobs:
         run: bun test
       
       - name: Validate all examples
-        run: |
-          export PATH="$PWD/../cli/dist:$PATH"
-          ./validate-all.sh
+        run: ./validate-all.sh
